@@ -64,3 +64,8 @@ gem "rspec-rails", "~> 7.1", :groups => [:development, :test]
 
 gem "cloudinary", "~> 2.2"
 gem "carrierwave"
+
+gem 'redis'
+gem 'hiredis'
+gem 'hiredis-client'
+gem 'redis-actionpack'
