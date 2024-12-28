@@ -17,13 +17,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_01_01_000000) do
   create_table "boards", force: :cascade do |t|
     t.string "title", null: false
     t.text "content", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string "title", null: false
-    t.text "content", null: false
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
