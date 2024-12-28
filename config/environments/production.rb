@@ -72,7 +72,7 @@ Rails.application.configure do
   config.cache_store = :redis_cache_store, {
     driver: :hiredis,
     namespace: 'board-cache', compress: true,
-    url: Rails.application.credentials.dig(:production, :redis_url))
+    url: Rails.application.credentials.dig(:production, :redis_url)
   }
   config.session_store :redis_store, key: 'issue-', expire_after: 90.days, servers: {
     url: Rails.application.credentials.dig(:production, :redis_url),
