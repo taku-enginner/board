@@ -31,7 +31,7 @@ RUN bundle install
 RUN yarn install
 COPY . /app
 
-# RUN bundle exec rails assets:precompile
+RUN bundle exec rails assets:precompile
 RUN bundle exec rails db:prepare
 # ENTRYPOINT ["/app/bin/docker-entrypoint"]
 
