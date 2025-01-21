@@ -19,9 +19,5 @@ test:
 
 production:
   <<: *default
-  database: 'board_app_production'
-  url: <%= Rails.application.credentials.dig(:production, :database_url) %>
-  # host: 'db'
-  # username: 'postgres'
-  # password: 'password'
+  url: <%= Rails.application.credentials.dig(:database_url) %>
 

@@ -70,13 +70,12 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
   config.cache_store = :redis_cache_store, {
-    driver: :hiredis,
     namespace: 'board-cache', compress: true,
     url: Rails.application.credentials.dig(:production, :redis_url)
   }
   config.session_store :redis_store, key: 'issue-', expire_after: 90.days, servers: {
-    url: Rails.application.credentials.dig(:production, :redis_url),
-    namespace: 'board-session'
+    namespace: 'board-session',
+    url: Rails.application.credentials.dig(:production, :redis_url)
   }
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
