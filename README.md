@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+こちらのリポジトリは、以下のサーバーレスサービスを利用してデプロイ、運用するためのサンプルコードを提供しています。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [back4app](https://www.back4app.com/)
+- [neon](https://neon.tech/)
+- [Upstash](https://upstash.com/)
+- [Cloudinary](https://cloudinary.com/)]
