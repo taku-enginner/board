@@ -44,3 +44,6 @@
 /config/credentials/production.key
 
 /config/credentials/development.key
+
+development-credentials-copy.txt
+production-credentials-copy.txt
