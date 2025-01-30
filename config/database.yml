@@ -9,6 +9,7 @@ development:
   host: 'db'
   username: 'postgres'
   password: 'password'
+  url: <%= Rails.application.credentials.dig(:neon, :database_url) %>
 
 test:
   <<: *default
@@ -19,5 +20,4 @@ test:
 
 production:
   <<: *default
-  url: <%= Rails.application.credentials.dig(:database_url) %>
-
+  url: <%= Rails.application.credentials.dig(:neon, :database_url) %>
